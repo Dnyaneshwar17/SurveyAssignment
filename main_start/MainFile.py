@@ -1,8 +1,8 @@
-from main_start.StartSurvey import StartSurvey
+from pages.StartSurvey import StartSurvey
 from utilities_config.Browser import BrowserConfig
-from main_start.Login import Login
-from main_start.CreateSurvey import CreateSurvey
-from main_start.AskQuestion import AskQuestion
+from pages.Login import Login
+from pages.CreateSurvey import CreateSurvey
+from pages.AskQuestion import AskQuestion
 import time
 
 class Start(object):
