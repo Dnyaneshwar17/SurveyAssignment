@@ -29,6 +29,14 @@ class Login(object):
 		driver.find_element(By.XPATH,Login.login_submit).click()
 		return True
 
+	def startlogin(self, driver):
+		Login.loginelement(self, driver)
+		Login.username(self, driver)
+		Login.password(self, driver)
+		Login.submit(self, driver)
+		return True
+
+
 
 
 

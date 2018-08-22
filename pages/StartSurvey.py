@@ -1,12 +1,12 @@
 
 from selenium.webdriver.common.by import By
+from  pages.AskQuestion import AskQuestion
 from utilities_config.Input import InputParameter
 import time
 
 class StartSurvey(object):
 
 
-       # entry = '//*[@id="scratch"]/span'
         createtitle = "title-text"
         surveyTitle = "//div[@id='surveyTitle']"
         new_survey_title = "Central Goverment"
@@ -16,15 +16,10 @@ class StartSurvey(object):
         new_page_title = "New Page Title"
         page_title_save = "//*[@id='pageTitleForm']//a[text()='SAVE']"
 
-        # def entry(self, driver):
-        #    driver.find_element(By.XPATH, StartSurvey.entry).click()
-        #    return True
 
-    # def surveyedit(self, driver):
-    #     sedit = driver.find_element(By.CLASS_NAME, "survey-title-table-wrapper").click()
-    #     return True
 
         def surveyedit(self,driver):
+            time.sleep(2)
             driver.find_element(By.CLASS_NAME, StartSurvey.createtitle).click()
             surveyedit=driver.find_element(By.XPATH,StartSurvey.surveyTitle)
             time.sleep(2)
@@ -43,6 +38,14 @@ class StartSurvey(object):
             surveytitle.send_keys(StartSurvey.new_page_title)
             driver.find_element(By.XPATH,StartSurvey.page_title_save).click()
             return True
+
+
+        def startsurvey(self, driver):
+            StartSurvey.surveyedit(self, driver)
+            time.sleep(2)
+            StartSurvey.surveytitle(self, driver)
+            AskQuestion.startquestion(self, driver)
+
 
 
 
