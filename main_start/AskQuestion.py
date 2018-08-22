@@ -8,7 +8,7 @@ import time
 class AskQuestion(object):
 
 
-    #eight_text="//div[@id='questionTitleWrap']//div[@id ='editTitle']"
+
 
     question_typing = "//div[@id='questionTitleWrap']//div[@id ='editTitle']"
     question_ans_patt = "//a[@id='changeQType' and @class='sm-input']"
@@ -43,7 +43,7 @@ class AskQuestion(object):
     # Six Question:
 
     six_que_sendkey = "Check the Features you like about SurveyMonkey?"
-    six_que_ans_patt = "//ul[@class='add-q-menu-right']//a[text()='Multiple Textboxes']"
+    six_que_ans_patt = "//ul[@class='add-q-menu-left']//a[text()='Checkboxes']"
 
     six_que_sel1 = "//table[@id='rows']/tbody[@class='answerSetting singleLine']/tr[4]/td[2]/div/div[1]"
     six_que_skey1 = "Question Bank"
@@ -202,59 +202,27 @@ class AskQuestion(object):
         time.sleep(3)
         return True
 
-    # def sixque(self,driver):
-    #     sixque=driver.find_element(By.XPATH,AskQuestion.question_typing)
-    #     time.sleep(3)
-    #     sixque.send_keys(AskQuestion.six_que_sendkey)
-    #     driver.find_element(By.XPATH,AskQuestion.question_ans_patt).click()
-    #     driver.find_element(By.XPATH,AskQuestion.six_que_ans_patt).click()
-    #
-    #     question_type=driver.find_element(By.XPATH,AskQuestion.six_que_sel1)
-    #     question_type.send_keys(AskQuestion.six_que_skey1)
-    #
-    #     question_type=driver.find_element(By.XPATH,AskQuestion.six_que_sel2)
-    #     question_type.send_keys(AskQuestion.six_que_skey2)
-    #
-    #     question_type = driver.find_element(By.XPATH, AskQuestion.six_que_sel3)
-    #     question_type.send_keys(AskQuestion.six_que_skey3)
-    #
-    #     question_type=driver.find_element(By.XPATH,AskQuestion.six_que_sel4)
-    #     question_type.send_keys(AskQuestion.six_que_skey4)
-    #     question_type=driver.find_element(By.XPATH,AskQuestion.six_que_sel5)
-    #     question_type.send_keys(AskQuestion.six_que_skey5)
-    #     driver.find_element(By.XPATH, AskQuestion.question_save_butt).click()
-    #     time.sleep(3)
-    #
-    #     return True
-
-    def sixque(self, driver):
-        sixque = driver.find_element(By.XPATH, "//div[@id='questionTitleWrap']//div[@id ='editTitle']")
+    def sixque(self,driver):
+        sixque=driver.find_element(By.XPATH,AskQuestion.question_typing)
         time.sleep(3)
-        sixque.send_keys("Check the Features you like about SurveyMonkey?")
-        driver.find_element(By.XPATH, "//a[@id='changeQType' and @class='sm-input']").click()
-        driver.find_element(By.XPATH, "//ul[@class='add-q-menu-left']//a[text()='Checkboxes']").click()
+        sixque.send_keys(AskQuestion.six_que_sendkey)
+        driver.find_element(By.XPATH,AskQuestion.question_ans_patt).click()
+        driver.find_element(By.XPATH,AskQuestion.six_que_ans_patt).click()
 
-        question_type = driver.find_element(By.XPATH,
-                                            "//table[@id='rows']/tbody[@class='answerSetting singleLine']/tr[4]/td[2]/div/div[1]")
-        question_type.send_keys("Question Bank")
+        question_type=driver.find_element(By.XPATH,AskQuestion.six_que_sel1)
+        question_type.send_keys(AskQuestion.six_que_skey1)
 
-        question_type = driver.find_element(By.XPATH,
-                                            "//table[@id='rows']/tbody[@class='answerSetting singleLine']/tr[5]/td[2]/div/div[1]")
-        question_type.send_keys("Themes")
+        question_type=driver.find_element(By.XPATH,AskQuestion.six_que_sel2)
+        question_type.send_keys(AskQuestion.six_que_skey2)
 
-        question_type = driver.find_element(By.XPATH,
-                                            "//table[@id='rows']/tbody[@class='answerSetting singleLine']/tr[6]/td[2]/div/div[1]")
-        question_type.send_keys("Graphical Result")
+        question_type = driver.find_element(By.XPATH, AskQuestion.six_que_sel3)
+        question_type.send_keys(AskQuestion.six_que_skey3)
 
-        question_type = driver.find_element(By.XPATH,
-                                            "//table[@id='rows']/tbody[@class='answerSetting singleLine']/tr[7]/td[2]/div/div[1]")
-        question_type.send_keys("Template Re-usability")
-
-        question_type = driver.find_element(By.XPATH,
-                                            "//table[@id='rows']/tbody[@class='answerSetting singleLine']/tr[8]/td[2]/div/div[1]")
-        question_type.send_keys("Collectors")
-
-        driver.find_element(By.XPATH, "//div[@id='editQuestion']/section[@class='t1']//a[text()='SAVE']").click()
+        question_type=driver.find_element(By.XPATH,AskQuestion.six_que_sel4)
+        question_type.send_keys(AskQuestion.six_que_skey4)
+        question_type=driver.find_element(By.XPATH,AskQuestion.six_que_sel5)
+        question_type.send_keys(AskQuestion.six_que_skey5)
+        driver.find_element(By.XPATH, AskQuestion.question_save_butt).click()
         time.sleep(3)
 
         return True

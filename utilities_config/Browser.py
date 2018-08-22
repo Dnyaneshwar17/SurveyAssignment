@@ -4,6 +4,7 @@ import os
 
 
 class BrowserConfig(object):
+
  def chrome(self):
      driverLocation = "D:\\Automation\\chromedriver"
      os.environ["webdriver.chrome.driver"] = driverLocation
@@ -27,3 +28,16 @@ class BrowserConfig(object):
      driver.get(InputParameter.url)
      driver.maximize_window()
      return driver
+
+ def select_browser(self):
+     browser = BrowserConfig.browser
+     if browser == "Chrome":
+        return BrowserConfig.chrome()
+     elif browser == "Firefox":
+         return BrowserConfig.firebox()
+     elif browser == "IE":
+         return BrowserConfig.ie(self)
+
+     else:
+         print("Please Select Proper Browser")
+         return 0

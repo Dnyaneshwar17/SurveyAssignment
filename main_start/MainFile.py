@@ -15,8 +15,6 @@ class Start(object):
          Login.username(self,driver)
          Login.password(self,driver)
          Login.submit(self,driver)
-         print("till submission Completed")
-
 
          if CreateSurvey.createsurvey(self,driver):
             CreateSurvey.entry(self,driver)
@@ -24,19 +22,13 @@ class Start(object):
             CreateSurvey.surveyselection(self,driver)
             time.sleep(2)
 
-
-
             if StartSurvey.surveyedit(self,driver):
                time.sleep(2)
                StartSurvey.surveytitle(self,driver)
                time.sleep(5)
-               print("Finally Done Here")
+
             else:
                 print("Survey Edit is Failed")
-
-
-
-
          else:
           print("Create Survey Failed")
 
@@ -46,23 +38,16 @@ class Start(object):
 
 
       if  AskQuestion.firstque(self,driver):
-
           AskQuestion.newquestion(self, driver)
-          time.sleep(3)
-
-          #print("First questio added ")
 
           if AskQuestion.secondque(self,driver):
              AskQuestion.newquestion(self, driver)
 
-
              if AskQuestion.thirdque(self,driver):
                 AskQuestion.newquestion(self, driver)
-               # print("Third Question added")
 
                 if AskQuestion.fourque(self,driver):
                    AskQuestion.newquestion(self,driver)
-                  # print("Four Question Added")
 
                    if AskQuestion.fiveque(self,driver):
                       AskQuestion.newquestion(self,driver)
@@ -83,15 +68,8 @@ class Start(object):
 
                          if AskQuestion.tenque(self,driver):
                             AskQuestion.newquestion(self,driver)
-
-
-
-
-
-
                          else:
-                             print("Ten Failed")
-
+                            print("Ten Failed")
                       else:
                           print("Nine Que Failed")
 
