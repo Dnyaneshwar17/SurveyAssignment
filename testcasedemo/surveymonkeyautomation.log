@@ -1,0 +1,50 @@
+08/24/2018 08:22:30 PM - SeleniumDriver - INFO: Element found with locator: LOG IN and  locatorType: link
+08/24/2018 08:22:34 PM - SeleniumDriver - INFO: Clicked on element with locator: LOG IN locatorType: link
+08/24/2018 08:22:34 PM - SeleniumDriver - INFO: Element found with locator: username and  locatorType: id
+08/24/2018 08:22:35 PM - SeleniumDriver - INFO: Sent data on element with locator: username locatorType: id
+08/24/2018 08:22:35 PM - SeleniumDriver - INFO: Element found with locator: password and  locatorType: id
+08/24/2018 08:22:35 PM - SeleniumDriver - INFO: Sent data on element with locator: password locatorType: id
+08/24/2018 08:22:35 PM - SeleniumDriver - INFO: Element found with locator: //form[@id='sign_in_form']//button[@type='submit'] and  locatorType: xpath
+08/24/2018 08:22:42 PM - SeleniumDriver - INFO: Clicked on element with locator: //form[@id='sign_in_form']//button[@type='submit'] locatorType: xpath
+08/24/2018 08:22:42 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/24/2018 08:22:42 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/24/2018 08:22:42 PM - SeleniumDriver - INFO: Element found with locator: userAcctTab_MainMenu and  locatorType: id
+08/24/2018 08:22:42 PM - SeleniumDriver - INFO: Element present with locator: userAcctTab_MainMenu locatorType: id
+08/24/2018 08:22:42 PM - SeleniumDriver - INFO: Element found with locator: CREATE SURVEY and  locatorType: link
+08/24/2018 08:22:49 PM - SeleniumDriver - INFO: Clicked on element with locator: CREATE SURVEY locatorType: link
+08/24/2018 08:22:49 PM - SeleniumDriver - INFO: Element found with locator: scratch and  locatorType: id
+08/24/2018 08:22:49 PM - SeleniumDriver - INFO: Clicked on element with locator: scratch locatorType: id
+08/24/2018 08:22:49 PM - SeleniumDriver - INFO: Element found with locator: surveyTitle and  locatorType: id
+08/24/2018 08:22:49 PM - SeleniumDriver - INFO: Sent data on element with locator: surveyTitle locatorType: id
+08/24/2018 08:22:49 PM - SeleniumDriver - INFO: Element found with locator: //div[@class='Select-placeholder'] and  locatorType: xpath
+08/24/2018 08:22:49 PM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='Select-placeholder'] locatorType: xpath
+08/24/2018 08:22:49 PM - SeleniumDriver - INFO: Element found with locator: //div[@id='react-select-2--option-0'] and  locatorType: xpath
+08/24/2018 08:22:49 PM - SeleniumDriver - INFO: Clicked on element with locator: //div[@id='react-select-2--option-0'] locatorType: xpath
+08/24/2018 08:22:49 PM - SeleniumDriver - INFO: Element found with locator: //button[@class='wds-button' and text()='CREATE SURVEY'] and  locatorType: xpath
+08/24/2018 08:22:50 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[@class='wds-button' and text()='CREATE SURVEY'] locatorType: xpath
+08/24/2018 08:22:50 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/24/2018 08:22:50 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/24/2018 08:22:50 PM - SeleniumDriver - INFO: Element found with locator: create and  locatorType: id
+08/24/2018 08:22:50 PM - SeleniumDriver - INFO: Element present with locator: create locatorType: id
+08/24/2018 08:22:50 PM - SeleniumDriver - INFO: Waiting for maximum :: 60 :: seconds for element to be clickable
+08/24/2018 08:22:59 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/24/2018 08:22:59 PM - SeleniumDriver - INFO: Element found with locator: //span[@class='title-text'] and  locatorType: xpath
+08/24/2018 08:23:00 PM - SeleniumDriver - INFO: Clicked on element with locator: //span[@class='title-text'] locatorType: xpath
+08/24/2018 08:23:00 PM - SeleniumDriver - INFO: Element found with locator: surveyTitle and  locatorType: id
+08/24/2018 08:23:00 PM - SeleniumDriver - INFO: Clear field with locator: surveyTitlelocatorType: id
+08/24/2018 08:23:00 PM - SeleniumDriver - INFO: Element found with locator: surveyTitle and  locatorType: id
+08/24/2018 08:23:00 PM - SeleniumDriver - INFO: Sent data on element with locator: surveyTitle locatorType: id
+08/24/2018 08:23:00 PM - SeleniumDriver - INFO: Element found with locator: //*[@id='surveyTitleForm']//a[text()='SAVE'] and  locatorType: xpath
+08/24/2018 08:23:00 PM - SeleniumDriver - INFO: Clicked on element with locator: //*[@id='surveyTitleForm']//a[text()='SAVE'] locatorType: xpath
+08/24/2018 08:23:05 PM - SeleniumDriver - INFO: Element found with locator: //span[text() = 'PAGE TITLE'] and  locatorType: xpath
+08/24/2018 08:23:06 PM - SeleniumDriver - INFO: Clicked on element with locator: //span[text() = 'PAGE TITLE'] locatorType: xpath
+08/24/2018 08:23:06 PM - SeleniumDriver - INFO: Element found with locator: pageTitle and  locatorType: id
+08/24/2018 08:23:06 PM - SeleniumDriver - INFO: Sent data on element with locator: pageTitle locatorType: id
+08/24/2018 08:23:06 PM - SeleniumDriver - INFO: Waiting for maximum :: 60 :: seconds for element to be clickable
+08/24/2018 08:23:06 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/24/2018 08:23:06 PM - SeleniumDriver - INFO: Element found with locator: //form[@id='pageTitleForm']//a[text()='SAVE'] and  locatorType: xpath
+08/24/2018 08:23:06 PM - SeleniumDriver - INFO: Clicked on element with locator: //form[@id='pageTitleForm']//a[text()='SAVE'] locatorType: xpath
+08/24/2018 08:23:11 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/24/2018 08:23:11 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/24/2018 08:23:11 PM - SeleniumDriver - INFO: Element found with locator: create and  locatorType: id
+08/24/2018 08:23:11 PM - SeleniumDriver - INFO: Element present with locator: create locatorType: id

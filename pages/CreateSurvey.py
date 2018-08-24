@@ -1,46 +1,63 @@
 from selenium.webdriver.common.by import By
-import time
-
-class CreateSurvey(object):
-      createtext = "CREATE SURVEY"
-      first_survey_title = "surveyTitle"
-      survey_send_key = "Goverment"
-      entryscratch="scratch"
-
-      survey_selection = "//div[@class='Select-placeholder']"
-      survey_sel_final = "//div[@id='react-select-2--option-0']"
-      survey_sel_create = "//button[@class='wds-button' and text()='CREATE SURVEY']"
+from base.Basepage import BasePage
 
 
-      def createsurvey(self, driver):
-          time.sleep(2)
-          driver.find_element_by_link_text(CreateSurvey.createtext).click()
-          return True
+class CreateSurvey(BasePage):
+
+    def __init__(self, driver):
+        super().__init__(driver)
+        self.driver = driver
+
+    _create_first_survey ="CREATE SURVEY"
+    _first_survey_title = "surveyTitle"
+    _start_survey_scratch="scratch"
+    _survey_category_selection = "//div[@class='Select-placeholder']"
+    _survey_category_option_selection = "//div[@id='react-select-2--option-0']"
+    _save_survey_button = "//button[@class='wds-button' and text()='CREATE SURVEY']"
+    _survey_body = "create"
 
 
-      def survename(self, driver):
-          surveyname = driver.find_element(By.ID, CreateSurvey.first_survey_title)
-          surveyname.send_keys(CreateSurvey.survey_send_key)
-          return True
+
+    def create_survey_link(self):
+        self.element_click(self._create_first_survey, locator_type="link")
+        return True
+
+    def start_survey_scratch(self):
+        self.element_click(self._start_survey_scratch, locator_type="id")
+
+    def send_survey_name(self,first_survey_name):
+        self.send_keys(first_survey_name,self._first_survey_title)
+
+    def send_survey_category(self):
+        self.element_click(self._survey_category_selection,locator_type="xpath")
+
+    def select_survey_category(self):
+        self.element_click(self._survey_category_option_selection ,locator_type="xpath")
+
+    def save_survey(self):
+        self.element_click(self._save_survey_button,locator_type="xpath")
+
+    def start_create_survey(self,first_survey_name=""):
+        CreateSurvey.create_survey_link(self)
+        CreateSurvey.start_survey_scratch(self)
+        CreateSurvey.send_survey_name(self,first_survey_name)
+        CreateSurvey.send_survey_category(self)
+        CreateSurvey.select_survey_category(self)
+        CreateSurvey.save_survey(self)
 
 
-      def surveyselection(self, driver):
-          driver.find_element(By.XPATH, CreateSurvey.survey_selection).click()
-          driver.find_element(By.XPATH, CreateSurvey.survey_sel_final).click()
-          driver.find_element(By.XPATH, CreateSurvey.survey_sel_create).click()
-          return True
 
-      def entry(self, driver):
-          driver.find_element(By.ID, CreateSurvey.entryscratch).click()
-          return True
 
-      def startcreatesurvey(self, driver):
-          CreateSurvey.createsurvey(self, driver)
-          time.sleep(2)
-          CreateSurvey.entry(self, driver)
-          time.sleep(2)
-          CreateSurvey.survename(self, driver)
-          time.sleep(2)
-          CreateSurvey.surveyselection(self, driver)
-          return True
+    def create_survey_successful(self):
+        self.wait_for_element(locator=self._survey_body, timeout=5, pollFrequency=1)
+        result = self.is_element_present(locator=self._survey_body)
+        return result
 
+   # def removepopup(self,driver):
+   #     alertobj=driver.switch_to.alert
+   #     alertobj.accept()
+   #     alertobj.dismiss()
+   #
+   #     remoove = driver.find_element(By.XPATH,"a[@class='wds-button wds-button--sm wds-button--ghost'][contains(text(),'REMOVE')]")
+   #     remoove.click()
+   #     return True

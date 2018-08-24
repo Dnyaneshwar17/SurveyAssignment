@@ -1,51 +1,78 @@
-
 from selenium.webdriver.common.by import By
-from  pages.AskQuestion import AskQuestion
-from utilities_config.Input import InputParameter
+from base.Basepage import BasePage
 import time
 
-class StartSurvey(object):
+class StartSurvey(BasePage):
+
+    def __init__(self, driver):
+        super().__init__(driver)
+        self.driver = driver
+
+    _survey_title_link="//span[@class='title-text']"
+    #_survey_title_link = "title-text"
+    _new_survey_title = "surveyTitle"
+    _survey_save_button = "//*[@id='surveyTitleForm']//a[text()='SAVE']"
+    _page_title = "//span[text() = 'PAGE TITLE']"
+    #_page_title_send = "//div[@id='pageTitle']"
+    _page_title_send ="pageTitle"
+    #_page_save_button = "//*[@id='pageTitleForm']//a[text()='SAVE']"
+    _page_save_button="//form[@id='pageTitleForm']//a[text()='SAVE']"
+    _survey_body = "create"
+
+    def survey_title_link(self):
+        self.wait_for_element(locator=self._survey_title_link, locator_type="xpath", pollFrequency=1)
+        self.element_click(self._survey_title_link, locator_type="xpath")
+
+    def survey_title_send(self,new_survey_title):
+        #self.wait_for_element(locator=self._new_survey_title, locator_type="xpath", pollFrequency=1)
+        self.clear_field(locator=self._new_survey_title)
+        self.send_keys(new_survey_title, self._new_survey_title)
+
+    def save_survey(self):
+        self.element_click(self._survey_save_button, locator_type="xpath")
+
+    def survey_title_operation(self, new_survey_title):
+        StartSurvey.survey_title_link(self)
+        StartSurvey.survey_title_send(self, new_survey_title)
+        StartSurvey.save_survey(self)
+
+    def page_title_link(self):
+        #self.wait_for_element(locator=self._page_title, locator_type="xpath", pollFrequency=1)
+        self.element_click(self._page_title, locator_type="xpath")
+
+    def page_title_send(self, new_page_title):
+        #self.wait_for_element(locator=self._page_title_send, locator_type="xpath", pollFrequency=1)
+        self.send_keys(new_page_title, self._page_title_send)
+
+    def save_page_title(self):
+        self.wait_for_element(locator=self._page_save_button, locator_type="xpath", pollFrequency=1)
+        self.element_click(self._page_save_button, locator_type="xpath")
+
+    def page_title_operation(self, new_page_title):
+        StartSurvey.page_title_link(self)
+        StartSurvey.page_title_send(self, new_page_title)
+        StartSurvey.save_page_title(self)
+
+    def start_survey_operation(self, new_survey_title="", new_page_title=""):
+        StartSurvey.survey_title_operation(self, new_survey_title)
+        time.sleep(5)
+        StartSurvey.page_title_operation(self, new_page_title)
+        time.sleep(5)
+        #StartSurvey.page_title_operation(self, new_page_title)
+
+    def surveyoperation_successful(self):
+        self.wait_for_element(locator=self._survey_body, timeout=5, pollFrequency=1)
+        result = self.is_element_present(locator=self._survey_body)
+        return result
 
 
-        createtitle = "title-text"
-        surveyTitle = "//div[@id='surveyTitle']"
-        new_survey_title = "Central Goverment"
-        survey_save_final = "//*[@id='surveyTitleForm']//a[text()='SAVE']"
-        page_title = "//span[text() = 'PAGE TITLE']"
-        page_title_start = "//div[@id='pageTitle']"
-        new_page_title = "New Page Title"
-        page_title_save = "//*[@id='pageTitleForm']//a[text()='SAVE']"
+        # StartSurvey.survey_title_link(self)
+        # StartSurvey.survey_title_send(self,new_survey_title)
+        # StartSurvey.save_survey(self)
+        # StartSurvey.page_title_link(self)
+        # StartSurvey.page_title_send(self,new_page_title)
+        # StartSurvey.save_page_title(self)
 
-
-
-        def surveyedit(self,driver):
-            time.sleep(2)
-            driver.find_element(By.CLASS_NAME, StartSurvey.createtitle).click()
-            surveyedit=driver.find_element(By.XPATH,StartSurvey.surveyTitle)
-            time.sleep(2)
-            surveyedit.clear()
-            time.sleep(1)
-            surveyedit.send_keys(StartSurvey.new_survey_title)
-            driver.find_element(By.XPATH,StartSurvey.survey_save_final).click()
-            time.sleep(2)
-            return True
-
-        def surveytitle(self,driver):
-            driver.find_element(By.XPATH,StartSurvey.page_title).click()
-            time.sleep(1)
-            surveytitle= driver.find_element_by_xpath(StartSurvey.page_title_start)
-            time.sleep(1)
-            surveytitle.send_keys(StartSurvey.new_page_title)
-            driver.find_element(By.XPATH,StartSurvey.page_title_save).click()
-            return True
-
-
-        def startsurvey(self, driver):
-            StartSurvey.surveyedit(self, driver)
-            time.sleep(2)
-            StartSurvey.surveytitle(self, driver)
-            AskQuestion.startquestion(self, driver)
-
-
+        #AskQuestion.startquestion(self)
 
 
