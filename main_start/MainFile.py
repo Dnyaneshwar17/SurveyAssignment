@@ -24,6 +24,12 @@ class Start():
         sur_operation = StartSurvey(self.driver)
         sur_operation.start_survey_operation(new_survey_title, new_page_title)
 
+        enter_questions = AskQuestion(self.driver)
+        enter_questions.first_question(first_question_enter)
+        enter_questions.second_question(second_question_enter)
+        enter_questions.third_question(third_question_enter)
+        enter_questions.four_question(four_question_enter)
+
         # enter_questions = AskQuestion(self.driver)
         # enter_questions.question(first_question)
         # # enter_questions.second_question(second_question)
