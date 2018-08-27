@@ -48,3 +48,199 @@
 08/24/2018 08:23:11 PM - SeleniumDriver - INFO: Element appeared on the web page
 08/24/2018 08:23:11 PM - SeleniumDriver - INFO: Element found with locator: create and  locatorType: id
 08/24/2018 08:23:11 PM - SeleniumDriver - INFO: Element present with locator: create locatorType: id
+08/27/2018 07:23:54 PM - SeleniumDriver - INFO: Element found with locator: LOG IN and  locatorType: link
+08/27/2018 07:23:56 PM - SeleniumDriver - INFO: Clicked on element with locator: LOG IN locatorType: link
+08/27/2018 07:23:56 PM - SeleniumDriver - INFO: Element found with locator: username and  locatorType: id
+08/27/2018 07:23:57 PM - SeleniumDriver - INFO: Sent data on element with locator: username locatorType: id
+08/27/2018 07:23:57 PM - SeleniumDriver - INFO: Element found with locator: password and  locatorType: id
+08/27/2018 07:23:57 PM - SeleniumDriver - INFO: Sent data on element with locator: password locatorType: id
+08/27/2018 07:23:57 PM - SeleniumDriver - INFO: Element found with locator: //form[@id='sign_in_form']//button[@type='submit'] and  locatorType: xpath
+08/27/2018 07:24:02 PM - SeleniumDriver - INFO: Clicked on element with locator: //form[@id='sign_in_form']//button[@type='submit'] locatorType: xpath
+08/27/2018 07:24:02 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:24:03 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:24:03 PM - SeleniumDriver - INFO: Element found with locator: userAcctTab_MainMenu and  locatorType: id
+08/27/2018 07:24:03 PM - SeleniumDriver - INFO: Element present with locator: userAcctTab_MainMenu locatorType: id
+08/27/2018 07:24:03 PM - SeleniumDriver - INFO: Element found with locator: CREATE SURVEY and  locatorType: link
+08/27/2018 07:24:08 PM - SeleniumDriver - INFO: Clicked on element with locator: CREATE SURVEY locatorType: link
+08/27/2018 07:24:08 PM - SeleniumDriver - INFO: Element found with locator: scratch and  locatorType: id
+08/27/2018 07:24:08 PM - SeleniumDriver - INFO: Clicked on element with locator: scratch locatorType: id
+08/27/2018 07:24:08 PM - SeleniumDriver - INFO: Element found with locator: surveyTitle and  locatorType: id
+08/27/2018 07:24:08 PM - SeleniumDriver - INFO: Sent data on element with locator: surveyTitle locatorType: id
+08/27/2018 07:24:08 PM - SeleniumDriver - INFO: Element found with locator: //div[@class='Select-placeholder'] and  locatorType: xpath
+08/27/2018 07:24:08 PM - SeleniumDriver - INFO: Clicked on element with locator: //div[@class='Select-placeholder'] locatorType: xpath
+08/27/2018 07:24:08 PM - SeleniumDriver - INFO: Element found with locator: //div[@id='react-select-2--option-0'] and  locatorType: xpath
+08/27/2018 07:24:09 PM - SeleniumDriver - INFO: Clicked on element with locator: //div[@id='react-select-2--option-0'] locatorType: xpath
+08/27/2018 07:24:09 PM - SeleniumDriver - INFO: Element found with locator: //button[@class='wds-button' and text()='CREATE SURVEY'] and  locatorType: xpath
+08/27/2018 07:24:09 PM - SeleniumDriver - INFO: Clicked on element with locator: //button[@class='wds-button' and text()='CREATE SURVEY'] locatorType: xpath
+08/27/2018 07:24:09 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:24:09 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:24:09 PM - SeleniumDriver - INFO: Element found with locator: create and  locatorType: id
+08/27/2018 07:24:09 PM - SeleniumDriver - INFO: Element present with locator: create locatorType: id
+08/27/2018 07:24:09 PM - SeleniumDriver - INFO: Waiting for maximum :: 60 :: seconds for element to be clickable
+08/27/2018 07:24:17 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:24:17 PM - SeleniumDriver - INFO: Element found with locator: //span[@class='title-text'] and  locatorType: xpath
+08/27/2018 07:24:18 PM - SeleniumDriver - INFO: Clicked on element with locator: //span[@class='title-text'] locatorType: xpath
+08/27/2018 07:24:18 PM - SeleniumDriver - INFO: Element found with locator: surveyTitle and  locatorType: id
+08/27/2018 07:24:18 PM - SeleniumDriver - INFO: Clear field with locator: surveyTitlelocatorType: id
+08/27/2018 07:24:18 PM - SeleniumDriver - INFO: Element found with locator: surveyTitle and  locatorType: id
+08/27/2018 07:24:18 PM - SeleniumDriver - INFO: Sent data on element with locator: surveyTitle locatorType: id
+08/27/2018 07:24:18 PM - SeleniumDriver - INFO: Element found with locator: //*[@id='surveyTitleForm']//a[text()='SAVE'] and  locatorType: xpath
+08/27/2018 07:24:19 PM - SeleniumDriver - INFO: Clicked on element with locator: //*[@id='surveyTitleForm']//a[text()='SAVE'] locatorType: xpath
+08/27/2018 07:24:24 PM - SeleniumDriver - INFO: Element found with locator: //span[text() = 'PAGE TITLE'] and  locatorType: xpath
+08/27/2018 07:24:24 PM - SeleniumDriver - INFO: Clicked on element with locator: //span[text() = 'PAGE TITLE'] locatorType: xpath
+08/27/2018 07:24:24 PM - SeleniumDriver - INFO: Element found with locator: pageTitle and  locatorType: id
+08/27/2018 07:24:24 PM - SeleniumDriver - INFO: Sent data on element with locator: pageTitle locatorType: id
+08/27/2018 07:24:24 PM - SeleniumDriver - INFO: Waiting for maximum :: 60 :: seconds for element to be clickable
+08/27/2018 07:24:24 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:24:24 PM - SeleniumDriver - INFO: Element found with locator: //form[@id='pageTitleForm']//a[text()='SAVE'] and  locatorType: xpath
+08/27/2018 07:24:24 PM - SeleniumDriver - INFO: Clicked on element with locator: //form[@id='pageTitleForm']//a[text()='SAVE'] locatorType: xpath
+08/27/2018 07:24:29 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:24:29 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:24:29 PM - SeleniumDriver - INFO: Element found with locator: create and  locatorType: id
+08/27/2018 07:24:29 PM - SeleniumDriver - INFO: Element present with locator: create locatorType: id
+08/27/2018 07:24:35 PM - SeleniumDriver - INFO: Element found with locator: editTitle and  locatorType: id
+08/27/2018 07:24:35 PM - SeleniumDriver - INFO: Sent data on element with locator: editTitle locatorType: id
+08/27/2018 07:24:35 PM - SeleniumDriver - INFO: Element found with locator: changeQType and  locatorType: id
+08/27/2018 07:24:35 PM - SeleniumDriver - INFO: Clicked on element with locator: changeQType locatorType: id
+08/27/2018 07:24:35 PM - SeleniumDriver - INFO: Element found with locator: //ul[@class='add-q-menu-left']//a[text()='Single Textbox'] and  locatorType: xpath
+08/27/2018 07:24:35 PM - SeleniumDriver - INFO: Clicked on element with locator: //ul[@class='add-q-menu-left']//a[text()='Single Textbox'] locatorType: xpath
+08/27/2018 07:24:35 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:24:40 PM - SeleniumDriver - INFO: Element not appeared on the web page
+08/27/2018 07:24:46 PM - SeleniumDriver - INFO: Element found with locator: //div[@id='editQuestion']/section[@class='t1']//a[text()='SAVE'] and  locatorType: xpath
+08/27/2018 07:24:46 PM - SeleniumDriver - INFO: Cannot click on the element with locator: //div[@id='editQuestion']/section[@class='t1']//a[text()='SAVE'] locatorType: xpath
+08/27/2018 07:24:46 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:24:51 PM - SeleniumDriver - INFO: Element not appeared on the web page
+08/27/2018 07:24:56 PM - SeleniumDriver - INFO: Element found with locator: //a[.='NEW QUESTION'] and  locatorType: xpath
+08/27/2018 07:24:56 PM - SeleniumDriver - INFO: Cannot click on the element with locator: //a[.='NEW QUESTION'] locatorType: xpath
+08/27/2018 07:24:56 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:24:56 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:24:56 PM - SeleniumDriver - INFO: Element found with locator: create and  locatorType: id
+08/27/2018 07:24:56 PM - SeleniumDriver - INFO: Element present with locator: create locatorType: id
+08/27/2018 07:25:01 PM - SeleniumDriver - INFO: Element found with locator: editTitle and  locatorType: id
+08/27/2018 07:25:02 PM - SeleniumDriver - INFO: Sent data on element with locator: editTitle locatorType: id
+08/27/2018 07:25:02 PM - SeleniumDriver - INFO: Element found with locator: changeQType and  locatorType: id
+08/27/2018 07:25:02 PM - SeleniumDriver - INFO: Clicked on element with locator: changeQType locatorType: id
+08/27/2018 07:25:02 PM - SeleniumDriver - INFO: Element found with locator: //ul[@class='add-q-menu-right']//a[text()='Date / Time'] and  locatorType: xpath
+08/27/2018 07:25:02 PM - SeleniumDriver - INFO: Clicked on element with locator: //ul[@class='add-q-menu-right']//a[text()='Date / Time'] locatorType: xpath
+08/27/2018 07:25:02 PM - SeleniumDriver - INFO: Element found with locator: //table[@id='rows']/tfoot[@class='answerTableFooter']//label[.='Time Info'] and  locatorType: xpath
+08/27/2018 07:25:03 PM - SeleniumDriver - INFO: Clicked on element with locator: //table[@id='rows']/tfoot[@class='answerTableFooter']//label[.='Time Info'] locatorType: xpath
+08/27/2018 07:25:03 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:25:03 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:25:08 PM - SeleniumDriver - INFO: Element found with locator: //div[@id='editQuestion']/section[@class='t1']//a[text()='SAVE'] and  locatorType: xpath
+08/27/2018 07:25:08 PM - SeleniumDriver - INFO: Clicked on element with locator: //div[@id='editQuestion']/section[@class='t1']//a[text()='SAVE'] locatorType: xpath
+08/27/2018 07:25:08 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:25:10 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:25:15 PM - SeleniumDriver - INFO: Element found with locator: //a[.='NEW QUESTION'] and  locatorType: xpath
+08/27/2018 07:25:15 PM - SeleniumDriver - INFO: Clicked on element with locator: //a[.='NEW QUESTION'] locatorType: xpath
+08/27/2018 07:25:15 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:25:15 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:25:15 PM - SeleniumDriver - INFO: Element found with locator: create and  locatorType: id
+08/27/2018 07:25:15 PM - SeleniumDriver - INFO: Element present with locator: create locatorType: id
+08/27/2018 07:25:20 PM - SeleniumDriver - INFO: Element found with locator: editTitle and  locatorType: id
+08/27/2018 07:25:21 PM - SeleniumDriver - INFO: Sent data on element with locator: editTitle locatorType: id
+08/27/2018 07:25:21 PM - SeleniumDriver - INFO: Element found with locator: changeQType and  locatorType: id
+08/27/2018 07:25:21 PM - SeleniumDriver - INFO: Clicked on element with locator: changeQType locatorType: id
+08/27/2018 07:25:21 PM - SeleniumDriver - INFO: Element found with locator: //ul[@class='add-q-menu-left']//a[text()='Star Rating'] and  locatorType: xpath
+08/27/2018 07:25:22 PM - SeleniumDriver - INFO: Clicked on element with locator: //ul[@class='add-q-menu-left']//a[text()='Star Rating'] locatorType: xpath
+08/27/2018 07:25:22 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:25:22 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:25:27 PM - SeleniumDriver - INFO: Element found with locator: //div[@id='editQuestion']/section[@class='t1']//a[text()='SAVE'] and  locatorType: xpath
+08/27/2018 07:25:27 PM - SeleniumDriver - INFO: Clicked on element with locator: //div[@id='editQuestion']/section[@class='t1']//a[text()='SAVE'] locatorType: xpath
+08/27/2018 07:25:27 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:25:27 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:25:32 PM - SeleniumDriver - INFO: Element found with locator: //a[.='NEW QUESTION'] and  locatorType: xpath
+08/27/2018 07:25:32 PM - SeleniumDriver - INFO: Clicked on element with locator: //a[.='NEW QUESTION'] locatorType: xpath
+08/27/2018 07:25:32 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:25:32 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:25:32 PM - SeleniumDriver - INFO: Element found with locator: create and  locatorType: id
+08/27/2018 07:25:32 PM - SeleniumDriver - INFO: Element present with locator: create locatorType: id
+08/27/2018 07:25:37 PM - SeleniumDriver - INFO: Element found with locator: editTitle and  locatorType: id
+08/27/2018 07:25:38 PM - SeleniumDriver - INFO: Sent data on element with locator: editTitle locatorType: id
+08/27/2018 07:25:38 PM - SeleniumDriver - INFO: Element found with locator: changeQType and  locatorType: id
+08/27/2018 07:25:38 PM - SeleniumDriver - INFO: Clicked on element with locator: changeQType locatorType: id
+08/27/2018 07:25:38 PM - SeleniumDriver - INFO: Element found with locator: //ul[@class='add-q-menu-left']//a[text()='Comment Box'] and  locatorType: xpath
+08/27/2018 07:25:38 PM - SeleniumDriver - INFO: Clicked on element with locator: //ul[@class='add-q-menu-left']//a[text()='Comment Box'] locatorType: xpath
+08/27/2018 07:25:38 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:25:38 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:25:43 PM - SeleniumDriver - INFO: Element found with locator: //div[@id='editQuestion']/section[@class='t1']//a[text()='SAVE'] and  locatorType: xpath
+08/27/2018 07:25:43 PM - SeleniumDriver - INFO: Clicked on element with locator: //div[@id='editQuestion']/section[@class='t1']//a[text()='SAVE'] locatorType: xpath
+08/27/2018 07:25:43 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:25:44 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:25:49 PM - SeleniumDriver - INFO: Element found with locator: //a[.='NEW QUESTION'] and  locatorType: xpath
+08/27/2018 07:25:49 PM - SeleniumDriver - INFO: Clicked on element with locator: //a[.='NEW QUESTION'] locatorType: xpath
+08/27/2018 07:25:49 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:25:49 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:25:49 PM - SeleniumDriver - INFO: Element found with locator: create and  locatorType: id
+08/27/2018 07:25:49 PM - SeleniumDriver - INFO: Element present with locator: create locatorType: id
+08/27/2018 07:25:54 PM - SeleniumDriver - INFO: Element found with locator: editTitle and  locatorType: id
+08/27/2018 07:25:54 PM - SeleniumDriver - INFO: Sent data on element with locator: editTitle locatorType: id
+08/27/2018 07:25:54 PM - SeleniumDriver - INFO: Element found with locator: changeQType and  locatorType: id
+08/27/2018 07:25:55 PM - SeleniumDriver - INFO: Clicked on element with locator: changeQType locatorType: id
+08/27/2018 07:25:55 PM - SeleniumDriver - INFO: Element found with locator: //ul[@class='add-q-menu-left']//a[text()='Multiple Choice'] and  locatorType: xpath
+08/27/2018 07:25:55 PM - SeleniumDriver - INFO: Clicked on element with locator: //ul[@class='add-q-menu-left']//a[text()='Multiple Choice'] locatorType: xpath
+08/27/2018 07:25:55 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:25:55 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:25:55 PM - SeleniumDriver - INFO: Element found with locator: //div[@id='editQuestion']//select[@id='answerBankCategorySelect'] and  locatorType: xpath
+08/27/2018 07:25:55 PM - SeleniumDriver - INFO: Clicked on element with locator: //div[@id='editQuestion']//select[@id='answerBankCategorySelect'] locatorType: xpath
+08/27/2018 07:25:56 PM - SeleniumDriver - INFO: Element found with locator: //option[contains(text(),'Always - Never')] and  locatorType: xpath
+08/27/2018 07:25:56 PM - SeleniumDriver - INFO: Clicked on element with locator: //option[contains(text(),'Always - Never')] locatorType: xpath
+08/27/2018 07:25:56 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:25:56 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:26:01 PM - SeleniumDriver - INFO: Element found with locator: //div[@id='editQuestion']/section[@class='t1']//a[text()='SAVE'] and  locatorType: xpath
+08/27/2018 07:26:01 PM - SeleniumDriver - INFO: Clicked on element with locator: //div[@id='editQuestion']/section[@class='t1']//a[text()='SAVE'] locatorType: xpath
+08/27/2018 07:26:01 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:26:01 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:26:06 PM - SeleniumDriver - INFO: Element found with locator: //a[.='NEW QUESTION'] and  locatorType: xpath
+08/27/2018 07:26:06 PM - SeleniumDriver - INFO: Clicked on element with locator: //a[.='NEW QUESTION'] locatorType: xpath
+08/27/2018 07:26:06 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:26:06 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:26:06 PM - SeleniumDriver - INFO: Element found with locator: create and  locatorType: id
+08/27/2018 07:26:06 PM - SeleniumDriver - INFO: Element present with locator: create locatorType: id
+08/27/2018 07:26:11 PM - SeleniumDriver - INFO: Element found with locator: editTitle and  locatorType: id
+08/27/2018 07:26:12 PM - SeleniumDriver - INFO: Sent data on element with locator: editTitle locatorType: id
+08/27/2018 07:26:12 PM - SeleniumDriver - INFO: Element found with locator: changeQType and  locatorType: id
+08/27/2018 07:26:12 PM - SeleniumDriver - INFO: Clicked on element with locator: changeQType locatorType: id
+08/27/2018 07:26:12 PM - SeleniumDriver - INFO: Element found with locator: //ul[@class='add-q-menu-right']//a[text()='Dropdown'] and  locatorType: xpath
+08/27/2018 07:26:13 PM - SeleniumDriver - INFO: Clicked on element with locator: //ul[@class='add-q-menu-right']//a[text()='Dropdown'] locatorType: xpath
+08/27/2018 07:26:13 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:26:13 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:26:13 PM - SeleniumDriver - INFO: Element found with locator: //div[@id='editQuestion']//select[@id='answerBankCategorySelect'] and  locatorType: xpath
+08/27/2018 07:26:13 PM - SeleniumDriver - INFO: Clicked on element with locator: //div[@id='editQuestion']//select[@id='answerBankCategorySelect'] locatorType: xpath
+08/27/2018 07:26:13 PM - SeleniumDriver - INFO: Element found with locator: //option[contains(text(),'Yes - No')] and  locatorType: xpath
+08/27/2018 07:26:13 PM - SeleniumDriver - INFO: Clicked on element with locator: //option[contains(text(),'Yes - No')] locatorType: xpath
+08/27/2018 07:26:13 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:26:14 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:26:19 PM - SeleniumDriver - INFO: Element found with locator: //div[@id='editQuestion']/section[@class='t1']//a[text()='SAVE'] and  locatorType: xpath
+08/27/2018 07:26:19 PM - SeleniumDriver - INFO: Clicked on element with locator: //div[@id='editQuestion']/section[@class='t1']//a[text()='SAVE'] locatorType: xpath
+08/27/2018 07:26:19 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:26:19 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:26:24 PM - SeleniumDriver - INFO: Element found with locator: //a[.='NEW QUESTION'] and  locatorType: xpath
+08/27/2018 07:26:24 PM - SeleniumDriver - INFO: Clicked on element with locator: //a[.='NEW QUESTION'] locatorType: xpath
+08/27/2018 07:26:24 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:26:24 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:26:24 PM - SeleniumDriver - INFO: Element found with locator: create and  locatorType: id
+08/27/2018 07:26:24 PM - SeleniumDriver - INFO: Element present with locator: create locatorType: id
+08/27/2018 07:26:29 PM - SeleniumDriver - INFO: Element found with locator: editTitle and  locatorType: id
+08/27/2018 07:26:30 PM - SeleniumDriver - INFO: Sent data on element with locator: editTitle locatorType: id
+08/27/2018 07:26:30 PM - SeleniumDriver - INFO: Element found with locator: changeQType and  locatorType: id
+08/27/2018 07:26:30 PM - SeleniumDriver - INFO: Clicked on element with locator: changeQType locatorType: id
+08/27/2018 07:26:30 PM - SeleniumDriver - INFO: Element found with locator: //ul[@class='add-q-menu-left']//a[text()='Multiple Choice'] and  locatorType: xpath
+08/27/2018 07:26:31 PM - SeleniumDriver - INFO: Clicked on element with locator: //ul[@class='add-q-menu-left']//a[text()='Multiple Choice'] locatorType: xpath
+08/27/2018 07:26:31 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:26:31 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:26:31 PM - SeleniumDriver - INFO: Element found with locator: //div[@id='editQuestion']//select[@id='answerBankCategorySelect'] and  locatorType: xpath
+08/27/2018 07:26:31 PM - SeleniumDriver - INFO: Clicked on element with locator: //div[@id='editQuestion']//select[@id='answerBankCategorySelect'] locatorType: xpath
+08/27/2018 07:26:31 PM - SeleniumDriver - INFO: Element found with locator: //option[contains(text(),'Yes - No')] and  locatorType: xpath
+08/27/2018 07:26:31 PM - SeleniumDriver - INFO: Clicked on element with locator: //option[contains(text(),'Yes - No')] locatorType: xpath
+08/27/2018 07:26:31 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:26:31 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:26:36 PM - SeleniumDriver - INFO: Element found with locator: //div[@id='editQuestion']/section[@class='t1']//a[text()='SAVE'] and  locatorType: xpath
+08/27/2018 07:26:37 PM - SeleniumDriver - INFO: Clicked on element with locator: //div[@id='editQuestion']/section[@class='t1']//a[text()='SAVE'] locatorType: xpath
+08/27/2018 07:26:37 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:26:37 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:26:42 PM - SeleniumDriver - INFO: Element found with locator: //a[.='NEW QUESTION'] and  locatorType: xpath
+08/27/2018 07:26:42 PM - SeleniumDriver - INFO: Clicked on element with locator: //a[.='NEW QUESTION'] locatorType: xpath
+08/27/2018 07:26:42 PM - SeleniumDriver - INFO: Waiting for maximum :: 5 :: seconds for element to be clickable
+08/27/2018 07:26:42 PM - SeleniumDriver - INFO: Element appeared on the web page
+08/27/2018 07:26:42 PM - SeleniumDriver - INFO: Element found with locator: create and  locatorType: id
+08/27/2018 07:26:42 PM - SeleniumDriver - INFO: Element present with locator: create locatorType: id
