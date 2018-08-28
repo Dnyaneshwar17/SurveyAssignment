@@ -1,6 +1,6 @@
 import pytest
 from utilities_config.Input import*
-from base.Browesr_factory import Browser_Factory
+from base.webdriver_factory import Browser_Factory
 from pages.Login import Login
 from pages.CreateSurvey import CreateSurvey
 from pages.StartSurvey import StartSurvey
@@ -110,12 +110,31 @@ def test_question_9(select_driver):
     print("Result: " + str(result))
     assert result == True
 
-# @pytest.mark.run(order=10)
-# def test_question_6(select_driver):
-#         print(" six question ")
-#         questions_six = AskQuestion(select_driver)
-#         questions_six.six_question(six_question_enter)
-#         result = questions_six.verify_question()
-#         print("Result: " + str(result))
-#         assert result == True
-#
+@pytest.mark.run(order=11)
+def test_question_6(select_driver):
+        print(" six question ")
+        questions_six = AskQuestion(select_driver)
+        questions_six.six_question(six_question_enter)
+        result = questions_six.verify_question()
+        print("Result: " + str(result))
+        assert result == True
+
+
+@pytest.mark.run(order=12)
+def test_question_8(select_driver):
+        print(" eight question ")
+        questions_eight = AskQuestion(select_driver)
+        questions_eight.eight_question(six_question_enter)
+        result = questions_eight.verify_question()
+        print("Result: " + str(result))
+        assert result == True
+
+@pytest.mark.run(order=13)
+def test_question_7(select_driver):
+        print(" seven question ")
+        questions_seven = AskQuestion(select_driver)
+        questions_seven.seven_question(seven_question_enter)
+        result = questions_seven.verify_question()
+        print("Result: " + str(result))
+        assert result == True
+
