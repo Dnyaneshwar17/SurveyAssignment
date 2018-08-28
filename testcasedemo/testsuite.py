@@ -1,7 +1,15 @@
 import unittest
-from testcasedemo.test_Login import TestLoginDemo
+from testcasedemo.test_login import TestLoginDemo
+from testcasedemo.test_create_survey import TestCreateSurvey
 
-tc1 = unittest.TestLoader().loadTestsFromTestCase(TestLoginDemo)
+class Test_Suite(unittest.TestCase):
 
-smokeTest = unittest.TestSuite([tc1])
-unittest.TextTestRunner(verbosity=2).run(smokeTest)
+    def test_main_class(self):
+
+        self.suite = unittest.TestSuite()
+        tc1 = unittest.TestLoader().loadTestsFromTestCase(TestLoginDemo)
+        tc2 = unittest.TestLoader().loadTestsFromTestCase(TestCreateSurvey)
+
+        self.suite.addTests([tc1, tc2])
+        runner = unittest.TextTestRunner()
+        runner.run(self.suite)
