@@ -22,3 +22,13 @@ six_2 = "Themes"
 six_3 = "Graphical Result"
 six_4 = "Template Re-usability"
 six_5 = "Collectors"
+
+seven_1 = "Service"
+seven_2 = "Support"
+seven_3 = "Responsive"
+seven_4 = "Very Good"
+seven_5 = "Good"
+seven_6 = "Average"
+seven_7 = "Below Average"
+
+
