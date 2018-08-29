@@ -19,5 +19,3 @@ class TestAskquestionSurvey(unittest.TestCase):
         self.question.first_question(first_question_enter)
         result = self.question.verify_question()
         assert result == True
-
-    
