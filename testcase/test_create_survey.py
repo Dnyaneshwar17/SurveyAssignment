@@ -17,6 +17,6 @@ class TestCreateSurvey(unittest.TestCase):
     def test_create_survey(self):
         print("start create survey")
         self.sc.start_create_survey(first_survey_name)
-        result = self.sc.create_survey_successful()
+        result = self.sc.valid_create_survey()
         assert result == True
 

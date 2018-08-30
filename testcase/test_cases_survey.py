@@ -8,7 +8,7 @@ from pages.AskQuestion import AskQuestion
 
 @pytest.fixture(scope='module')
 def select_driver():
-    select_driver = Browser_Factory("Chrome")
+    select_driver = Browser_Factory("chrome")
     driver = select_driver.select_browser()
     return driver
 
@@ -27,7 +27,7 @@ def test_create_survey(select_driver):
     print("create survey started")
     cs = CreateSurvey(select_driver)
     cs.start_create_survey(first_survey_name)
-    result = cs.create_survey_successful()
+    result = cs.valid_create_survey()
     print("Result: " + str(result))
 
     assert result == True
@@ -37,7 +37,7 @@ def test_survey_operation(select_driver):
     print("survey operation started")
     operation_survey = StartSurvey(select_driver)
     operation_survey.start_survey_operation(new_survey_title, new_page_title)
-    result = operation_survey.surveyoperation_successful()
+    result = operation_survey.valid_page_title()
     print("Result: " + str(result))
 
     assert result == True
