@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from base.Basepage import BasePage
+from base.basepage import BasePage
 
 
 class CreateSurvey(BasePage):
@@ -14,9 +14,7 @@ class CreateSurvey(BasePage):
     _survey_category_selection = "//div[@class='Select-placeholder']"
     _survey_category_option_selection = "//div[@id='react-select-2--option-0']"
     _save_survey_button = "//button[@class='wds-button' and text()='CREATE SURVEY']"
-    _survey_body = "create"
-
-
+    _valid_survey = "accQuestionBank" #changes
 
     def create_survey_link(self):
         self.element_click(self._create_first_survey, locator_type="link")
@@ -45,19 +43,12 @@ class CreateSurvey(BasePage):
         CreateSurvey.select_survey_category(self)
         CreateSurvey.save_survey(self)
 
-
-
-
-    def create_survey_successful(self):
-        self.wait_for_element(locator=self._survey_body, timeout=5, pollFrequency=1)
-        result = self.is_element_present(locator=self._survey_body)
+    def valid_create_survey(self):
+        self.wait_for_element(locator=self._valid_survey, timeout=5, pollFrequency=1)
+        result = self.is_element_present(locator=self._valid_survey)
         return result
 
-   # def removepopup(self,driver):
-   #     alertobj=driver.switch_to.alert
-   #     alertobj.accept()
-   #     alertobj.dismiss()
-   #
-   #     remoove = driver.find_element(By.XPATH,"a[@class='wds-button wds-button--sm wds-button--ghost'][contains(text(),'REMOVE')]")
-   #     remoove.click()
-   #     return True
+    # def create_survey_successful(self):
+    #     self.wait_for_element(locator=self._survey_body, timeout=5, pollFrequency=1)
+    #     result = self.is_element_present(locator=self._survey_body)
+    #     return result

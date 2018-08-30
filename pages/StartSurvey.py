@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from base.Basepage import BasePage
+from base.basepage import BasePage
 import time
 
 class StartSurvey(BasePage):
@@ -8,16 +8,17 @@ class StartSurvey(BasePage):
         super().__init__(driver)
         self.driver = driver
 
+    #Survey Title Locator
     _survey_title_link="//span[@class='title-text']"
-    #_survey_title_link = "title-text"
     _new_survey_title = "surveyTitle"
     _survey_save_button = "//*[@id='surveyTitleForm']//a[text()='SAVE']"
+    _valid_survey="//div[@id='livePreview']//div[@class='survey-title-table-wrapper']" #change
+
+    #Page Title Locator
     _page_title = "//span[text() = 'PAGE TITLE']"
-    #_page_title_send = "//div[@id='pageTitle']"
     _page_title_send ="pageTitle"
-    #_page_save_button = "//*[@id='pageTitleForm']//a[text()='SAVE']"
     _page_save_button="//form[@id='pageTitleForm']//a[text()='SAVE']"
-    _survey_body = "create"
+    _valid_page = "//div[@id='livePreview']//span[@class='page-title user-generated']"
 
     def survey_title_link(self):
         self.wait_for_element(locator=self._survey_title_link, locator_type="xpath", pollFrequency=1)
@@ -60,11 +61,22 @@ class StartSurvey(BasePage):
         time.sleep(5)
         #StartSurvey.page_title_operation(self, new_page_title)
 
-    def surveyoperation_successful(self):
-        self.wait_for_element(locator=self._survey_body, timeout=5, pollFrequency=1)
-        result = self.is_element_present(locator=self._survey_body)
+    # def surveyoperation_successful(self):
+    #     self.wait_for_element(locator=self._survey_body, timeout=5, pollFrequency=1)
+    #     result = self.is_element_present(locator=self._survey_body)
+    #     return result
+
+    def valid_page_title(self):
+        time.sleep(5)
+        self.wait_for_element(self._valid_page, locator_type="xpath")
+        result = self.get_element(locator=self._valid_page, locator_type="xpath").text
         return result
 
+    # def valid_survey_title(self):
+    #     time.sleep(5)
+    #     self.wait_for_element(self._valid_survey, locator_type="xpath")
+    #     result = self.get_element(locator=self._valid_survey, locator_type="xpath").text
+    #     return result
 
         # StartSurvey.survey_title_link(self)
         # StartSurvey.survey_title_send(self,new_survey_title)
