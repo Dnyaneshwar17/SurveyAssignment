@@ -18,7 +18,6 @@ def start_login():
     lg.startlogin(username, password)
     return driver
 
-
 @pytest.yield_fixture(scope="class")
 def start_survey():
     get_driver = Browser_Factory(one_time_browser_setup)
