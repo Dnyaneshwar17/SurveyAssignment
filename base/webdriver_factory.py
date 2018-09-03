@@ -1,9 +1,10 @@
 from selenium import webdriver
 import os
+from base.basepage import BasePage
 
 
 
-class Browser_Factory():
+class Browser_Factory(BasePage):
 
     baseURL = "https://www.surveymonkey.com/"
     browser = "Chrome"
